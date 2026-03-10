@@ -18,12 +18,12 @@ const userSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ['client', 'freelance'],  // seulement ces 2 valeurs
+    enum: ['client', 'freelance'],
     required: true
   },
   note: {
     type: Number,
-    default: 0   // note moyenne du freelance
+    default: 0
   },
   createdAt: {
     type: Date,
